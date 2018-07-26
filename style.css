@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+@-ms-viewport{
+ width: device-width;
+}
+
+body{
+ background: yellowgreen;
+ font-family: 'rubik', system-ui, sans-serif;
+ font-size: 14px;
+ margin: 1em;
+}
+
+img {
+ max-width: 100%
+}
+
+nav{
+ background-color: rgba(255,255,255,0.75);
+ display: flex;
+}
+
+nav a {
+ color:black;
+ padding: 20px;
+ text-decoration: none;
+ transition: background-color 0.5s;
+}
+
+nav a:hover{
+ background: rgba(255,255,255,0.4);
+}
+
+nav a.active {
+ background: white;
+}
+
+.cardgroup {
+ display: flex;
+ flex-direction: column;
+ margin-left: -10px;
+ margin-right: -10px;
+
+}
+
+.card {
+ background: rgba(255,255,255,0.4);
+ box-shadow: 0 1px 2px rgba(0,0,0,0.5);
+ padding: 20px;
+ border: solid 10px white;
+ margin: 10px;
+ flex-basis: 1;
+ border-radius: 10px;
+ transition: box-shadow 1s, transform 1s;
+}
+
+.card:hover {
+ box-shadow: 0 0px 0 6px rgba(0,102,0,1);
+ transform: scale(1.1);
+}
+
+@media (min-width: 500px) {
+ body {
+   background: salmon;
+   display: flex;
+   margin: 2em;
+ }
+
+ nav{
+   flex-direction: column;
+   margin-right: 40px;
+ }
+}
+
+
+@media (min-width: 820px) {
+   body {
+     background: lightblue;
+     }
+     .cardgroup {
+     flex-direction: row;
+   }
+}
+
+
+
+/* unvisited link */
+a:link {
+   color: red;
+}
+
+/* visited link */
+a:visited {
+   color: green;
+}
+
+/* mouse over link */
+a:hover {
+   color: black;
+}
+
+/* selected link */
+a:active {
+   color: blue;
+}
